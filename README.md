@@ -10,12 +10,16 @@ Hash table uses string folding as a hash function. In string folding each charac
 1.3 Methods
 get_hash(self, data)
 Calculates a slot for the data based on the data’s characters ASCII values.
+
 insert(self, data)
 Inserts new value to the table. Calls linked list’s function to do the appending. Append works by shifting the nodes pointers based on logic.
+
 search(self, data)
 Searches the selected value. Returns True, False or None based on the outcome.
+
 delete(self, data)
 Deletes the selected value. Works by shifting the pointers. (Note: When deleting the node the previous node’s pointer needs to be directed to next.next node)
+
 print(self)
 Loops through the array of linked lists and prints the contents.
 
