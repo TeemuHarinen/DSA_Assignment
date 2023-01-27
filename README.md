@@ -1,13 +1,17 @@
 # DSA_Assignment
 
 1. Implementing the Hash Table
+
 1.1 Structure of the hash table
+
 Hash table with linear probing, open hashing, and collision handling. Hash table consists of array with linked lists as elements. Collisions are handled with linked lists, when collision happens, the value is added to the end of the linked list.
 
 1.2 Hash function
+
 Hash table uses string folding as a hash function. In string folding each character in an input is transformed into its ASCII value. Characters ASCII values are summed together (before summing raise to 3rd potency). Using potencies eliminates problem with short input being calculated as small number always. This is mainly the reason I chose this type of hashing method.
 
 1.3 Methods
+
 get_hash(self, data)
 Calculates a slot for the data based on the data’s characters ASCII values.
 
